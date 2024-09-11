@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Alea-Test/static/css/main.67fa5326.css",
-    "main.js": "/Alea-Test/static/js/main.c18e9048.js",
+    "main.css": "/Alea-Test/static/css/main.62244ce7.css",
+    "main.js": "/Alea-Test/static/js/main.c7ae2a17.js",
     "static/js/453.011ec0bd.chunk.js": "/Alea-Test/static/js/453.011ec0bd.chunk.js",
     "static/media/404-Alea.gif": "/Alea-Test/static/media/404-Alea.20048500a40d17e32410.gif",
     "static/media/Alea_img.png": "/Alea-Test/static/media/Alea_img.4f8f4ca39262a837a8a2.png",
@@ -20,12 +20,12 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/Alea-Test/static/media/roboto-greek-ext-400-normal.1df4abad55796d11a0c8.woff2",
     "static/media/roboto-greek-ext-400-normal.woff": "/Alea-Test/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/Alea-Test/index.html",
-    "main.67fa5326.css.map": "/Alea-Test/static/css/main.67fa5326.css.map",
-    "main.c18e9048.js.map": "/Alea-Test/static/js/main.c18e9048.js.map",
+    "main.62244ce7.css.map": "/Alea-Test/static/css/main.62244ce7.css.map",
+    "main.c7ae2a17.js.map": "/Alea-Test/static/js/main.c7ae2a17.js.map",
     "453.011ec0bd.chunk.js.map": "/Alea-Test/static/js/453.011ec0bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67fa5326.css",
-    "static/js/main.c18e9048.js"
+    "static/css/main.62244ce7.css",
+    "static/js/main.c7ae2a17.js"
   ]
 }

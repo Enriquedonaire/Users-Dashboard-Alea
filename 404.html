@@ -18,6 +18,7 @@
         .not-found-logo {
             width: 150px;
             margin-bottom: 20px;
+            cursor: pointer;
         }
         .not-found-image-container {
             display: flex;
@@ -38,22 +39,26 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="not-found-page">
-        <a href="/Alea-Test/users">
-            <img src="/Alea-Test/Alea_img.png" alt="Alea Logo" class="not-found-logo" />
-        </a>
+        <img src="/Alea-Test/Alea_img.png" alt="Alea Logo" class="not-found-logo" onclick="navigateToUsers()" />
         <div class="not-found-image-container">
             <img src="/Alea-Test/404-Alea.gif" alt="404 Not Found" class="not-found-gif" />
         </div>
         <div class="button-container">
-            <a href="/Alea-Test/users" class="mui-button-primary button">
+            <span class="mui-button-primary button" onclick="navigateToUsers()">
                 Go Back
-            </a>
+            </span>
         </div>
     </div>
+    <script>
+        function navigateToUsers() {
+            window.location.href = '/Alea-Test/#/users';
+        }
+    </script>
 </body>
 </html>
