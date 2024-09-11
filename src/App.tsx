@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/users" element={<PrivateRoute><UsersPage /></PrivateRoute>} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="notfound" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </ThemeContextProvider>
