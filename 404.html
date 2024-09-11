@@ -57,7 +57,8 @@
     </div>
     <script>
         function navigateToUsers() {
-            window.location.href = '/Alea-Test/#/users';
+            window.history.pushState({}, '', '/Alea-Test/users');
+            window.location.reload();
         }
     </script>
 </body>
