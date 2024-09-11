@@ -45,19 +45,19 @@
 </head>
 <body>
     <div class="not-found-page">
-        <img src="/Alea-Test/Alea_img.png" alt="Alea Logo" class="not-found-logo" onclick="redirectToUsers()" />
+        <img src="/Alea-Test/Alea_img.png" alt="Alea Logo" class="not-found-logo" onclick="navigateToUsers()" />
         <div class="not-found-image-container">
             <img src="/Alea-Test/404-Alea.gif" alt="404 Not Found" class="not-found-gif" />
         </div>
         <div class="button-container">
-            <span class="mui-button-primary button" onclick="redirectToUsers()">
+            <span class="mui-button-primary button" onclick="navigateToUsers()">
                 Go Back
             </span>
         </div>
     </div>
     <script>
-        function redirectToUsers() {
-            window.location.href = '/Alea-Test/users'; 
+        function navigateToUsers() {
+            window.location.href = '/Alea-Test/#/users';
         }
     </script>
 </body>
