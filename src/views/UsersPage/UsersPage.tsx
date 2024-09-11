@@ -13,8 +13,8 @@ import {
   IconButton,
 } from '@mui/material';
 import { DarkMode, LightMode } from '@mui/icons-material';
-import AleaImage from '../../assets/Alea_img.png'; // Importa la imagen de la empresa
-import { useThemeContext } from '../../context/Themes'; // Importa el contexto del tema
+import AleaImage from '../../assets/Alea_img.png';
+import { useThemeContext } from '../../context/Themes';
 import '../../styles/styles.less';
 
 interface User {
@@ -31,7 +31,7 @@ const UsersPage: React.FC = () => {
   const [perPage, setPerPage] = useState(5);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(false);
-  const { darkMode, toggleTheme } = useThemeContext(); // Utiliza el contexto del tema
+  const { darkMode, toggleTheme } = useThemeContext(); 
   const navigate = useNavigate();
 
   const fetchUsers = useCallback(async () => {

@@ -14,7 +14,7 @@ describe('LoginPage', () => {
       </ThemeContextProvider>
     );
 
-    // Simulación de entradas de usuario usando findByRole para inputs
+    
     fireEvent.change(await screen.findByRole('textbox', { name: /email/i }), {
       target: { value: 'test@example.com' },
     });
@@ -23,10 +23,10 @@ describe('LoginPage', () => {
       target: { value: 'password123' },
     });
 
-    // Simulación de clic en botón de login
+    
     fireEvent.click(screen.getByRole('button', { name: /login/i }));
 
-    // Espera a que la navegación ocurra
+    
     expect(window.location.pathname).toBe('/users');
   });
 });

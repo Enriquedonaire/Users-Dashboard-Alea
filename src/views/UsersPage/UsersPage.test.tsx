@@ -26,10 +26,10 @@ describe('UsersPage', () => {
       </ThemeContextProvider>
     );
 
-    // Utiliza findByText en lugar de waitFor + getByText
+    
     expect(await screen.findByText(/john/i)).toBeInTheDocument();
 
-    // Verifica que el botón de 'Next' esté presente
+    
     expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument();
   });
 });
