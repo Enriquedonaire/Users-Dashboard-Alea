@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alea-Test/static/css/main.67fa5326.css",
-    "main.js": "/Alea-Test/static/js/main.b412d34b.js",
+    "main.js": "/Alea-Test/static/js/main.989164a6.js",
     "static/js/453.011ec0bd.chunk.js": "/Alea-Test/static/js/453.011ec0bd.chunk.js",
     "static/media/404-Alea.gif": "/Alea-Test/static/media/404-Alea.20048500a40d17e32410.gif",
     "static/media/Alea_img.png": "/Alea-Test/static/media/Alea_img.4f8f4ca39262a837a8a2.png",
@@ -21,11 +21,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/Alea-Test/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/Alea-Test/index.html",
     "main.67fa5326.css.map": "/Alea-Test/static/css/main.67fa5326.css.map",
-    "main.b412d34b.js.map": "/Alea-Test/static/js/main.b412d34b.js.map",
+    "main.989164a6.js.map": "/Alea-Test/static/js/main.989164a6.js.map",
     "453.011ec0bd.chunk.js.map": "/Alea-Test/static/js/453.011ec0bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.67fa5326.css",
-    "static/js/main.b412d34b.js"
+    "static/js/main.989164a6.js"
   ]
 }
