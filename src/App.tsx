@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './views/LoginPage/LoginPage';
 import UsersPage from './views/UsersPage/UsersPage';
-import NotFoundPage from './views//NotFoundPage/NotFoundPage';
+import NotFoundPage from './views/NotFoundPage/NotFoundPage';
 import PrivateRoute from './components/PrivateRoute';
 import { ThemeContextProvider } from './context/Themes';
 
