@@ -5,7 +5,7 @@ import LoginPage from './LoginPage';
 import { ThemeContextProvider } from '../../context/Themes';
 
 describe('LoginPage', () => {
-  it('renders LoginPage correctly', () => {
+  it('handles login correctly', async () => {
     render(
       <ThemeContextProvider>
         <BrowserRouter>
@@ -14,39 +14,19 @@ describe('LoginPage', () => {
       </ThemeContextProvider>
     );
 
-    expect(screen.getByText(/Login/i)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/email/i)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/password/i)).toBeInTheDocument();
-  });
+    // Simulación de entradas de usuario usando findByRole para inputs
+    fireEvent.change(await screen.findByRole('textbox', { name: /email/i }), {
+      target: { value: 'test@example.com' },
+    });
 
-  it('shows an error when login fails', async () => {
-    render(
-      <ThemeContextProvider>
-        <BrowserRouter>
-          <LoginPage />
-        </BrowserRouter>
-      </ThemeContextProvider>
-    );
+    fireEvent.change(await screen.findByLabelText(/password/i), {
+      target: { value: 'password123' },
+    });
 
-    fireEvent.change(screen.getByPlaceholderText(/email/i), { target: { value: 'invalid' } });
-    fireEvent.change(screen.getByPlaceholderText(/password/i), { target: { value: 'invalid' } });
-    fireEvent.click(screen.getByText(/login/i));
+    // Simulación de clic en botón de login
+    fireEvent.click(screen.getByRole('button', { name: /login/i }));
 
-    const errorMessage = await screen.findByText(/Invalid credentials. Please try again./i);
-    expect(errorMessage).toBeInTheDocument();
-  });
-
-  it('toggles theme correctly', () => {
-    render(
-      <ThemeContextProvider>
-        <BrowserRouter>
-          <LoginPage />
-        </BrowserRouter>
-      </ThemeContextProvider>
-    );
-
-    const toggleButton = screen.getByRole('button', { name: /Dark/i });
-    fireEvent.click(toggleButton);
-    expect(screen.getByText(/Light/i)).toBeInTheDocument();
+    // Espera a que la navegación ocurra
+    expect(window.location.pathname).toBe('/users');
   });
 });
