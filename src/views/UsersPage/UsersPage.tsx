@@ -53,7 +53,7 @@ const UsersPage: React.FC = () => {
 
   const logout = () => {
     localStorage.removeItem('token');
-    navigate('/login');
+    navigate('/');
   };
 
   return (
