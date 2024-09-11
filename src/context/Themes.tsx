@@ -34,8 +34,8 @@ const darkTheme = createTheme({
       main: '#240200', 
     },
     background: {
-      default: '#121212',
-      paper: '#121212',
+      default: '#091321',
+      paper: '#091321',
     },
   },
 });
