@@ -12,7 +12,6 @@ const App: React.FC = () => {
       <Router basename="/Alea-Test">
         <Routes>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/users" element={<PrivateRoute><UsersPage /></PrivateRoute>} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
