@@ -1,0 +1,192 @@
+
+@primary-color-light: #fe6e1d; 
+@primary-color-dark: #539bd4; 
+@secondary-color-dark: #240200; 
+@background-color-light: #ffffff; 
+@background-color-dark: #121212; 
+@text-color-light: #000000; 
+@text-color-dark: #ffffff; 
+
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: @background-color-light;
+  color: @text-color-light;
+  transition: all 0.3s ease;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.logo {
+  height: 80px;
+  margin: 10px 20px;
+}
+
+
+.button {
+  
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &-primary {
+    background-color: @primary-color-light;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid @primary-color-light;
+      color: @primary-color-light;
+    }
+  }
+
+  &-dark {
+    background-color: @primary-color-dark;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid @primary-color-dark;
+      color: @primary-color-dark;
+    }
+  }
+}
+
+
+.mui-button-primary {
+  background-color: @primary-color-light;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid @primary-color-light;
+    color: @primary-color-light;
+  }
+}
+
+.mui-button-dark {
+  background-color: @primary-color-dark;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid @primary-color-dark;
+    color: @primary-color-dark;
+  }
+}
+
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+
+  .MuiButton-root {
+    margin-left: 10px;
+  }
+}
+
+
+.light-theme {
+  background-color: @background-color-light;
+  color: @text-color-light;
+}
+
+
+.dark-theme {
+  background-color: @background-color-dark;
+  color: @text-color-dark;
+}
+
+
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+
+  &-dark {
+    background-color: #1e1e1e;
+  }
+}
+
+
+.not-found-page {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+.not-found-logo {
+  height: 80px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer; 
+}
+
+
+.not-found-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; 
+  margin-top: 20px;
+}
+
+
+.not-found-gif {
+  max-width: 80%; 
+  height: 500px;
+  display: block;
+}
+
+
+.button-container {
+  margin-top: 20px;
+
+  .button {
+    padding: 10px 20px;
+    border: 2px solid @primary-color-light; 
+    background-color: @primary-color-light;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: @primary-color-light;
+    }
+  }
+}
