@@ -56,6 +56,7 @@ const LoginPage: React.FC = () => {
               Login
             </Typography>
             <form>
+              Email
               <TextField
                 type="email"
                 fullWidth
@@ -63,6 +64,7 @@ const LoginPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              Password
               <TextField
                 type="password"
                 fullWidth
